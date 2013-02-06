@@ -1,0 +1,18 @@
+global:
+  env:
+    - LARAVEL_ENV: production
+web1:
+  name: laravel-pt-docs
+  shared_writable_dirs:
+    - /app/storage/cache
+    - /app/storage/logs
+    - /app/storage/sessions
+    - /app/storage/views
+    - /app/storage/meta
+  document_root: /public
+  php_version: 5.3.8
+  php_extensions:
+    - pdo_mysql
+    - mcrypt
+    - eaccelerator
+    - memcached
